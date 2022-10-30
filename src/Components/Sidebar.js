@@ -1,5 +1,5 @@
 import React from 'react';
-import MessageIcon from "../Assets/MessageIcon.svg"
+import BlueMessageIcon from "../Assets/BlueMessageIcon.svg"
 
 const Sidebar = () => {
   const onDragStart = (event, nodeType) => {
@@ -10,7 +10,7 @@ const Sidebar = () => {
   return (
     <aside>
       <div className="dndnode" onDragStart={(event) => onDragStart(event, 'default')} draggable>
-        <img src={MessageIcon} alt="message-icon" />
+        <img src={BlueMessageIcon} alt="message-icon" />
         <p>Message</p>
       </div>
     </aside>
