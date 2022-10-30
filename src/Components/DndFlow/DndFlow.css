@@ -1,0 +1,119 @@
+.dndflow {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.dndflow aside {
+  border-right: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #fcfcfc;
+}
+
+.dndflow aside .description {
+  margin-bottom: 10px;
+}
+
+.dndflow .dndnode {
+  cursor: grab !important;
+}
+
+.dndflow .reactflow-wrapper {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+}
+
+.dndflow aside {
+  width: 20%;
+  max-width: 250px;
+}
+
+.text-node-container {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-node-header {
+  background-color: #B2F0E3;
+  height: 15px;
+  font-size: 8px;
+  line-height: 15px;
+  text-align: left;
+  padding: 0px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px 5px 0px 0px ;
+  width: 90%;
+  border: 0.5px solid #B2F0E3;
+}
+
+.text-node-header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.text-node-input {
+  border-radius: 0px 0px 5px 5px;
+  border: 0.5px solid lightgray;
+  outline: none;
+  font-size: 10px;
+  height: 25px;
+  width: 90%;
+  padding: 0px 4px;
+}
+
+.text-node-header img {
+  width: 10px;
+  height: 10px;
+}
+
+.navbar {
+  background: #f2f2f2;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  padding: 10px
+}
+
+.error-message, .success-message {
+  position: absolute;
+  left: 50%;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 10px;
+  background: #fba5a5;
+}
+
+.success-message {
+  background: rgb(156, 248, 156) !important;
+}
+
+.save-btn, .dndflow .dndnode {
+  padding: 5px 10px;
+  border: 1px solid blue;
+  color: blue;
+  border-radius: 5px;
+  box-shadow: rgb(3 102 214 / 20%) 0px 0px 0px 2px;
+  cursor: pointer;
+}
+
+.react-flow {
+  display: flex;
+}
+
+.dndnode img {
+  width: 20px;
+  height: 20px;
+}
